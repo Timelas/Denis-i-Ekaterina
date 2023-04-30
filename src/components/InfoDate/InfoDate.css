@@ -273,18 +273,18 @@
   }
 
   .info-date__who {
-    width: 250px;
+    width: 270px;
     margin: 35px 0 20px;
   }
 
   .info-date__text {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 26px;
     margin: 10px 0 0;
   }
 
   .info-date__our-wedding {
-    width: 170px;
+    width: 190px;
     margin: 20px 0 10px;
   }
 
@@ -293,13 +293,13 @@
   }
 
   .info-date__day {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 64px;
+    line-height: 64px;
     margin: 15px 0 10px;
   }
 
   .info-date__place {
-    padding-top: 60px;
+    padding-top: 30px;
   }
 
   .info-date__where {

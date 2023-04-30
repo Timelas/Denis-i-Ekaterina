@@ -167,7 +167,7 @@
   }
 
   .header__date {
-    gap: 15px;
+    gap: 16px;
     height: 70px;
   }
   
@@ -178,7 +178,7 @@
   }
   
   .header__text {
-    font-size: 20px;
+    font-size: 22px;
   }
   
   .header__date_info_day {

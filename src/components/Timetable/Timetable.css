@@ -188,14 +188,14 @@
   }
 
   .timetable__text {
-    font-size: 18px;
+    font-size: 20px;
     width: 100px;
   }
 }
 
 @media screen and (max-width: 750px) {
   .timetable__header {
-    height: 70px;
+    height: 75px;
   }
 
   .timetable {

@@ -191,6 +191,7 @@
 
   .question__form {
     margin: 40px 0 0;
+    max-width: 400px;
   }
 
   .question__text-span {
@@ -250,6 +251,7 @@
 
   .question__form {
     margin: 40px 0 0;
+    max-width: 300px;
   }
 
   .question__string {
@@ -285,7 +287,7 @@
   }
 
   .question__header {
-    height: 60px;
+    height: 65px;
   }
 
   .question__cloud {
@@ -296,14 +298,14 @@
   }
 
   .question__text {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 20px;
+    line-height: 30px;
     width: 80%;
     margin: 20px 0 0;
   }
 
   .question__text-span {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 23px;
   }
 
@@ -319,11 +321,12 @@
 
   .question__form {
     margin: 30px 0 0;
+    max-width: 250px;
   }
 
   .question__string {
     margin: 0 0 15px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .question__label {
@@ -332,7 +335,7 @@
 
   .question__input {
     height: 45px;
-    font-size: 16px;
+    font-size: 18px;
     width: 250px;
   }
 
