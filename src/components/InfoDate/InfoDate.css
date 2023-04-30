@@ -1,0 +1,313 @@
+.info-date {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-date__background {
+  width: 100%;
+  height: calc(100vh + 200px);
+  max-height: 1100px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.info-date__cloud {
+  width: 1000px;
+  height: 1000px;
+  object-fit: contain;
+  position: absolute;
+  top: -100px;
+  left: -750px;
+  z-index: -1;
+}
+
+.info-date__cloud-two {
+  width: 1000px;
+  height: 1000px;
+  object-fit: contain;
+  position: absolute;
+  top: -250px;
+  right: -700px;
+  z-index: -1;
+}
+
+.info-date__island {
+  height: 650px;
+  object-fit: contain;
+  position: absolute;
+  bottom: -200px;
+  left: -150px;
+  z-index: -1;
+}
+
+.info-date__invitation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 53%;
+}
+
+.info-date__who {
+  width: 550px;
+  object-fit: contain;
+  margin: 100px 0 40px;
+}
+
+.info-date__text {
+  font-size: 40px;
+  line-height: 50px;
+  margin: 30px 0 0;
+}
+
+.info-date__our-wedding {
+  width: 450px;
+  object-fit: contain;
+  margin: 70px 0 40px;
+}
+
+.info-date__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 0;
+}
+
+.info-date__day {
+  font-size: 150px;
+  line-height: 150px;
+  margin: 50px 0 30px;
+}
+
+.info-date__place {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.info-date__check-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative;
+}
+
+.info-date__where {
+  height: 110px;
+  object-fit: contain;
+}
+
+.info-date__map {
+  margin: 40px 0 100px;
+  border: 1px solid #305d41;
+  box-sizing: border-box;
+  height: 352px;
+  z-index: 3;
+}
+
+@media screen and (max-width: 1700px) {
+  .info-date__cloud {
+    width: 700px;
+    height: 700px;
+    top: -100px;
+    left: -300px;
+  }
+  
+  .info-date__cloud-two {
+    width: 700px;
+    height: 700px;
+    top: -250px;
+    right: -300px;
+  }
+  
+  .info-date__island {
+    height: 350px;
+    bottom: -50px;
+    left: -145px;
+  }
+  
+  .info-date__who {
+    width: 350px;
+    margin: 70px 0 30px;
+  }
+  
+  .info-date__text {
+    font-size: 30px;
+    line-height: 35px;
+    margin: 30px 0 0;
+  }
+  
+  .info-date__our-wedding {
+    width: 300px;
+    margin: 40px 0 20px;
+  }
+  
+  .info-date__info {
+    margin: 30px 0 0;
+  }
+  
+  .info-date__day {
+    font-size: 100px;
+    line-height: 100px;
+    margin: 30px 0 10px;
+  }
+  
+  .info-date__place {
+    padding-top: 80px;
+  }
+  
+  .info-date__where {
+    height: 80px;
+  }
+  
+  .info-date__map {
+    margin: 5px 0 70px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .info-date__background {
+    max-height: 800px;
+  }
+
+  .info-date__cloud {
+    width: 600px;
+    height: 600px;
+    top: 0;
+    left: -350px;
+  }
+
+  .info-date__cloud-two {
+    width: 600px;
+    height: 600px;
+    top: -150px;
+    right: -300px;
+  }
+
+  .info-date__island {
+    height: 400px;
+    bottom: 0;
+    left: -150px;
+  }
+
+  .info-date__invitation {
+    width: 55%;
+  }
+
+  .info-date__who {
+    width: 350px;
+    margin: 80px 0 20px;
+  }
+
+  .info-date__text {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 20px 0 0;
+  }
+
+  .info-date__our-wedding {
+    width: 250px;
+    margin: 30px 0 20px;
+  }
+
+  .info-date__info {
+    margin: 30px 0 0;
+  }
+
+  .info-date__day {
+    font-size: 80px;
+    line-height: 80px;
+    margin: 20px 0 15px;
+  }
+
+  .info-date__place {
+    padding-top: 80px;
+  }
+
+  .info-date__where {
+    height: 70px;
+  }
+
+  .info-date__map {
+    margin: 25px 0 70px;
+    padding: 0;
+    height: 302px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .info-date__background {
+    max-height: 500px;
+  }
+
+  .info-date__cloud {
+    width: 300px;
+    height: 300px;
+    left: -50px;
+  }
+
+  .info-date__cloud-two {
+    width: 300px;
+    height: 300px;
+    top: -50px;
+    right: -100px;
+  }
+
+  .info-date__island {
+    height: 200px;
+    bottom: 0;
+    left: -100px;
+  }
+
+  .info-date__invitation {
+    width: 70%;
+  }
+
+  .info-date__who {
+    width: 250px;
+    margin: 35px 0 20px;
+  }
+
+  .info-date__text {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 10px 0 0;
+  }
+
+  .info-date__our-wedding {
+    width: 170px;
+    margin: 20px 0 10px;
+  }
+
+  .info-date__info {
+    margin: 20px 0 0;
+  }
+
+  .info-date__day {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 15px 0 10px;
+  }
+
+  .info-date__place {
+    padding-top: 60px;
+  }
+
+  .info-date__where {
+    height: 50px;
+  }
+
+  .info-date__map {
+    margin: 25px 0 50px;
+    height: 242px;
+  }
+}

@@ -1,0 +1,247 @@
+.timetable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  position: relative;
+}
+
+.timetable__header {
+  height: 140px;
+  object-fit: contain;
+}
+
+.timetable__block {
+  display: grid;
+  grid-template-columns: repeat(7, 150px);
+  grid-template-rows: repeat(3, max-content);
+  grid-template-areas:
+    "rings text-foto glasses text-plate cake text-music car"
+    "line-rings line-foto line-glasses line-plate line-cake line-music line-car"
+    "text-rings foto text-glasses plate text-cake music text-car";
+  margin-top: 130px;
+  align-items: center;
+  justify-items: center;
+  column-gap: 0;
+  row-gap: 15px;
+}
+
+.timetable__pic {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.timetable__pic_visual_rings {
+  grid-area: rings;
+}
+
+.timetable__pic_visual_foto {
+  grid-area: foto;
+}
+
+.timetable__pic_visual_glasses {
+  grid-area: glasses;
+}
+
+.timetable__pic_visual_plate {
+  grid-area: plate;
+}
+
+.timetable__pic_visual_cake {
+  grid-area: cake;
+}
+
+.timetable__pic_visual_music {
+  grid-area: music;
+}
+
+.timetable__pic_visual_car {
+  grid-area: car;
+}
+
+.timetable__line {
+  width: 151px;
+  object-fit: contain;
+}
+
+.timetable__line-start {
+  grid-area: line-rings;
+  object-fit: contain;
+  width: 84px;
+  object-position: right;
+  justify-self: flex-end;
+}
+
+.timetable__line-end {
+  grid-area: line-car;
+  object-fit: contain;
+  width: 95px;
+  object-position: left;
+  justify-self: flex-start;
+}
+
+.timetable__line_center_foto {
+  grid-area: line-foto;
+}
+
+.timetable__line_center_glasses {
+  grid-area: line-glasses;
+}
+
+.timetable__line_center_plate {
+  grid-area: line-plate;
+}
+
+.timetable__line_center_cake {
+  grid-area: line-cake;
+}
+
+.timetable__line_center_music {
+  grid-area: line-music;
+}
+
+.timetable__text {
+  font-size: 24px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.timetable__text_about_rings {
+  grid-area: text-rings;
+}
+
+.timetable__text_about_foto {
+  grid-area: text-foto;
+}
+
+.timetable__text_about_glasses {
+  grid-area: text-glasses;
+}
+
+.timetable__text_about_plate {
+  grid-area: text-plate;
+}
+
+.timetable__text_about_cake {
+  grid-area: text-cake;
+}
+
+.timetable__text_about_music {
+  grid-area: text-music;
+}
+
+.timetable__text_about_car {
+  grid-area: text-car;
+}
+
+@media screen and (max-width: 1700px) {
+  .timetable {
+    padding-top: 100px;
+  }
+
+  .timetable__header {
+    height: 100px;
+  }
+
+  .timetable__block {
+    margin-top: 70px;
+}
+
+  .timetable__pic {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .timetable {
+    padding-top: 80px;
+  }
+
+  .timetable__header {
+    height: 80px;
+  }
+
+  .timetable__block {
+    grid-template-columns: repeat(7, 100px);
+    margin-top: 40px;
+  }
+
+  .timetable__pic {
+    width: 70px;
+    height: 70px;
+  }
+
+  .timetable__line {
+    width: 101px;
+  }
+
+  .timetable__line-start {
+    height: 11.4px;
+    object-position: right;
+  }
+
+  .timetable__line-end {
+    height: 11.4px;
+    object-position: left;
+  }
+
+  .timetable__text {
+    font-size: 18px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .timetable__header {
+    height: 70px;
+  }
+
+  .timetable {
+    padding-top: 50px;
+  }
+
+  .timetable__text {
+    width: 120px;
+  }
+
+  .timetable__block {
+    grid-template-rows: repeat(7, 99px);
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-areas:
+      "rings line-rings text-rings"
+      "text-foto line-foto foto"
+      "glasses line-glasses text-glasses"
+      "text-plate line-plate plate"
+      "cake line-cake text-cake"
+      "text-music line-music music"
+      "car line-car text-car";
+    margin-top: 30px;
+    column-gap: 15px;
+    row-gap: 0;
+  }
+
+  .timetable__line {
+    transform: rotate(90deg);
+    width: 115px;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .timetable__line-start {
+    height: 13px;
+    padding-right: 45px;
+    transform: rotate(90deg);
+    justify-self: center;
+    align-self: flex-end;
+  }
+
+  .timetable__line-end {
+    height: 13px;
+    padding-left: 45px;
+    transform: rotate(90deg);
+    justify-self: center;
+    align-self: flex-start;
+  }
+}

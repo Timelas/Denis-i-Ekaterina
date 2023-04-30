@@ -1,0 +1,178 @@
+.dresscode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  position: relative;
+}
+
+.dresscode__header {
+  height: 100px;
+  object-fit: contain;
+}
+
+.dresscode__description {
+  font-size: 30px;
+  line-height: 37px;
+  width: 40%;
+  margin: 60px 0 0;
+}
+
+.dresscode__cloud {
+  width: 1200px;
+  height: 1000px;
+  object-fit: contain;
+  position: absolute;
+  top: -350px;
+  left: 0;
+  z-index: -1;
+}
+
+.dresscode__birds {
+  width: 1800px;
+  object-fit: contain;
+  position: absolute;
+  top: 200px;
+  left: 350px;
+  z-index: -1;
+}
+
+.dresscode__colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 0;
+  min-width: 25%;
+}
+
+.dresscode__color {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 1px solid rgba(53, 53, 53, 0.259);
+}
+
+.dresscode__color_var_one {
+  background-color: #ca96a2;
+}
+
+.dresscode__color_var_two {
+  background-color: #f1cbd3;
+}
+
+.dresscode__color_var_three {
+  background-color: #86a1b6;
+}
+
+.dresscode__color_var_four {
+  background-color: #b3c6aa;
+}
+
+.dresscode__color_var_five {
+  background-color: #809878;
+}
+
+@media screen and (max-width: 1700px) {
+  .dresscode {
+    padding-top: 80px;
+  }
+
+  .dresscode__description {
+    font-size: 24px;
+    width: 50%;
+    margin: 40px 0 0;
+  }
+
+  .dresscode__header {
+    height: 90px;
+  }
+  
+  .dresscode__cloud {
+    width: 900px;
+    height: 1000px;
+    top: -400px;
+  }
+  
+  .dresscode__birds {
+    width: 1000px;
+    top: 200px;
+    left: 250px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .dresscode {
+    padding-top: 60px;
+  }
+
+  .dresscode__header {
+    height: 60px;
+  }
+
+  .dresscode__description {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 30px 0 0;
+    width: 40%;
+  }
+
+  .dresscode__colors {
+    margin: 30px 0 0;
+    gap: 20px;
+  }
+
+  .dresscode__color {
+    width: 55px;
+    height: 55px;
+  }
+
+  .dresscode__cloud {
+    width: 600px;
+    height: 600px;
+    top: -200px;
+  }
+
+  .dresscode__birds {
+    width: 800px;
+    top: 200px;
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dresscode {
+    padding-top: 40px;
+  }
+
+  .dresscode__header {
+    height: 50px;
+  }
+
+  .dresscode__cloud {
+    width: 400px;
+    height: 300px;
+    top: -150px;
+    left: 0;
+  }
+
+  .dresscode__description {
+    font-size: 16px;
+    line-height: 20px;
+    width: 80%;
+    margin: 30px 0 0;
+  }
+
+  .dresscode__colors {
+    margin: 30px 0 0;
+    gap: 15px;
+  }
+
+  .dresscode__color {
+    width: 37px;
+    height: 37px;
+  }
+  
+  .dresscode__birds {
+    display: none;
+  }
+}

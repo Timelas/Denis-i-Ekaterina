@@ -1,0 +1,154 @@
+.menu {
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: inherit;
+  z-index: 4;
+  transition: background-color 1s;
+}
+
+.menu__background {
+  background-color: white;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+}
+
+.menu__link {
+  list-style: none;
+  transition: transform .4s;
+  cursor: pointer;
+}
+
+.menu__link:hover {
+  transform: scale(110%);
+}
+
+.menu__ancor {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  transition: color .4s;
+}
+
+.menu__ancor:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.menu__button {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  margin: 30px auto;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+} 
+.menu__span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #264f26;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .3s ease-in-out;
+}
+.menu__button .menu__span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+.menu__button .menu__span:nth-child(2) {
+  top: 12px;
+  transform-origin: left center;
+}
+.menu__button .menu__span:nth-child(3) {
+  top: 24px;
+  transform-origin: left center;
+}
+
+.menu__button_open .menu__span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+.menu__button_open .menu__span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.menu__button_open .menu__span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 25px;
+  left: 8px;
+}
+
+@media screen and (max-width: 1700px) {
+  .menu {
+    height: 70px;
+    margin: 0;
+  }
+
+  .menu__ancor {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .menu {
+    height: 60px;
+  }
+
+  .menu__ancor {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    height: 50px;
+  }
+
+  .menu__links {
+    width: 80%;
+  }
+
+  .menu__ancor {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu {
+    justify-content: flex-end;
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+
+  .menu__button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+  }
+}
