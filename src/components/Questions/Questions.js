@@ -100,11 +100,11 @@ function Questions() {
             </fieldset>
           <button type="submit" className="question__button" disabled={loading ? true : false}>{loading ? "Отправка..." : "Отправить"}</button>
         </form> 
+        <img src={greenCloud} alt="зеленое облако" className="question__cloud"></ img>
       </div>
       :
       <p className="question__text">Форма отправлена!</p>
       }
-      <img src={greenCloud} alt="зеленое облако" className="question__cloud"></ img>
     </section>
   );
 }

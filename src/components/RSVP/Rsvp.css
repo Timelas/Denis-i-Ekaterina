@@ -35,7 +35,7 @@
 }
 
 .rsvp__answer {
-  font-size: 20px;
+  font-size: 30px;
   line-height: 37px;
   margin: 10px 0;
 }
@@ -121,7 +121,7 @@
   }
 
   .rsvp__answer {
-    font-size: 18px;
+    font-size: 28px;
     line-height: 33px;
     margin: 7px 0;
   }
@@ -168,7 +168,7 @@
   }
 
   .rsvp__answer {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 28px;
     margin: 15px 0 5px 0;
   }
@@ -232,8 +232,8 @@
   }
 
   .rsvp__answer {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .rsvp__form {

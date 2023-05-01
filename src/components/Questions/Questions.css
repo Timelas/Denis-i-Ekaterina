@@ -171,6 +171,7 @@
 @media screen and (max-width: 1700px) {
   .question {
     padding: 80px 0 0;
+    min-height: 180px;
   }
 
   .question__header {
@@ -226,6 +227,7 @@
 @media screen and (max-width: 1300px) {
   .question {
     padding: 60px 0 0;
+    min-height: 180px;
   }
 
   .question__header {
@@ -284,6 +286,7 @@
 @media screen and (max-width: 800px) {
   .question {
     padding: 40px 0 0;
+    min-height: 180px;
   }
 
   .question__header {
