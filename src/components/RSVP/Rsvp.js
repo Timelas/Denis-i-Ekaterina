@@ -82,12 +82,12 @@ function Rsvp() {
           <button className="rsvp__button" name="Отклонено" onClick={renderSubmitNo} disabled={loading ? true : false}>{loading ? "Отправка..." : "Отклонить"}</button>
           </div>
         </form>
+        <img src={greenCloud} alt="зеленое облако" className="rsvp__cloud"></ img>
       </div> :
       <div>
         <p className="rsvp__answer">Форма отправлена!</p>
       </div>
       } 
-      <img src={greenCloud} alt="зеленое облако" className="rsvp__cloud"></ img>
     </section>
   );
 }

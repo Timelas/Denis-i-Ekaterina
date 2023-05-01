@@ -308,18 +308,18 @@
   }
 
   .question__text-span {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .question__visible-radio {
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
   }
 
   .question__visible-checkbox {
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
   }
 
   .question__form {
@@ -333,7 +333,7 @@
   }
 
   .question__label {
-    margin: 10px 0 0;
+    margin: 15px 0 0;
   }
 
   .question__input {
@@ -346,5 +346,6 @@
     width: 155px;
     height: 40px;
     font-size: 16px;
+    margin: 10px 0 0;
   }
 }
