@@ -37,11 +37,16 @@ function Questions() {
             <label htmlFor="who" className="question__label-input">Имя и фамилия:</label>
             <input type="text" name="Имя и Фамилия" id="who" required className="question__input" minLength={2}></input>
           </p>
-          <fieldset className="question__string">Понадобится ли вам трансфер от метро "Улица Дыбенко" или метро "Гражданский проспект":
-            <label  htmlFor="yes-transfer" className="question__label">
-              <input className="question__unvisible" type="radio" name="Трансфер" value="Нужен" id="yes-transfer"></input>
+          <fieldset className="question__string">Понадобится ли вам трансфер от метро:
+            <label  htmlFor="yes-transfer1" className="question__label">
+              <input className="question__unvisible" type="radio" name="Трансфер" value="Гражданский проспект" id="yes-transfer1"></input>
               <span className="question__visible-radio"></span>
-              <span className="question__text-span">Да</span>
+              <span className="question__text-span">Да (Гражданский проспект)</span>
+            </label>
+            <label  htmlFor="yes-transfer2" className="question__label">
+              <input className="question__unvisible" type="radio" name="Трансфер" value="ул. Дыбенко" id="yes-transfer2"></input>
+              <span className="question__visible-radio"></span>
+              <span className="question__text-span">Да (улица Дыбенко)</span>
             </label>
             <label className="question__label" htmlFor="no-transfer">
               <input className="question__unvisible" type="radio" name="Трансфер" value="Не нужен" id="no-transfer"></input>

@@ -74,8 +74,8 @@ function Rsvp() {
             <input type="number" min="0" max="10" name="Количество персон" id="person" required className="rsvp__input"></input>
           </p>
           <p className="rsvp__string">
-            <label htmlFor="+1" className="rsvp__label">Имена гостей</label>
-            <input type="text" name="Имена гостей" id="+1" required className="rsvp__input"></input>
+            <label htmlFor="+1" className="rsvp__label">Имена и Фамилии гостей</label>
+            <input type="text" name="Имена и Фамилии гостей" id="+1" required className="rsvp__input"></input>
           </p>
           <div className="rsvp__buttons">
           <button className="rsvp__button" name="Принято" onClick={renderSubmitYes} disabled={loading ? true : false}>{loading ? "Отправка..." : "Подтвердить"}</button>
