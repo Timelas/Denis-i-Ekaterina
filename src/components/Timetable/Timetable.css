@@ -210,12 +210,12 @@
     grid-template-rows: repeat(6, 99px);
     grid-template-columns: 1fr 30px 1fr;
     grid-template-areas:
-      "rings line-rings text-rings"
-      "text-foto line-foto foto"
-      "text-plate line-plate plate"
-      "cake line-cake text-cake"
-      "text-music line-music music"
-      "car line-car text-car";
+      "foto line-rings text-rings"
+      "text-foto line-foto rings"
+      "plate line-plate text-plate"
+      "text-cake line-cake cake"
+      "music line-music text-music"
+      "text-car line-carcar";
     margin-top: 30px;
     column-gap: 15px;
     row-gap: 0;

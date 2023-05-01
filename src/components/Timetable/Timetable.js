@@ -1,7 +1,7 @@
 import React from "react";
 import "./Timetable.css";
 import rings from "../../images/rings.svg";
-import foto from "../../images/foto.svg";
+import foto from "../../images/legsgo.svg";
 import plate from "../../images/plate.svg";
 import cake from "../../images/cake.svg";
 import music from "../../images/music.svg";
