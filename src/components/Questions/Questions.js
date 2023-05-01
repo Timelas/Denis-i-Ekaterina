@@ -5,7 +5,7 @@ import "./Questions.css";
 
 function Questions() {
   const formRef = useRef(null)
-  const scriptUrl = "https://script.google.com/macros/s/AKfycby_BYT6LzPV3FZHn66CPeQcYu6bE5b3ZBjuvAoU08L_RdiIzQ7viRTg5mtfej77Y_iK/exec"
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbx3eL5ysZFDSPQdybdPz-kvmyhT_sclmkCQoVHsTy8R3GcCJNvnKFqmsS3z4hArxVtNsA/exec"
   const [loading, setLoading] = useState(false);
   const [isFormVisible, setisFormVisible] = useState(true);
 
@@ -31,7 +31,7 @@ function Questions() {
       <img src={question} alt="rsvp" className="question__header"></ img>
       { isFormVisible ?
         <div className="question__container">
-          <p className="question__text">Чтобы все прошло идеально и этот день запомнился надолго, пожалуйста, ответьте на несколько вопросов</p>
+          <p className="question__text">Чтобы все прошло идеально и этот день запомнился надолго, пожалуйста, ответьте на несколько вопросов:</p>
           <form className="question__form" ref={formRef} onSubmit={handleSubmit}>
           <p className="question__string">
             <label htmlFor="who" className="question__label-input">Имя и фамилия:</label>
@@ -44,7 +44,7 @@ function Questions() {
               <span className="question__text-span">Да</span>
             </label>
             <label className="question__label" htmlFor="no-transfer">
-              <input className="question__unvisible" type="radio" name="Трансфер" value="Нужен" id="no-transfer"></input>
+              <input className="question__unvisible" type="radio" name="Трансфер" value="Не нужен" id="no-transfer"></input>
               <span className="question__visible-radio"></span>
               <span className="question__text-span">Нет</span>
             </label>

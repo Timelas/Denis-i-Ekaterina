@@ -5,7 +5,7 @@ import "./Rsvp.css";
 
 function Rsvp() {
   const formRef = useRef(null)
-  const scriptUrl = "https://script.google.com/macros/s/AKfycby_BYT6LzPV3FZHn66CPeQcYu6bE5b3ZBjuvAoU08L_RdiIzQ7viRTg5mtfej77Y_iK/exec"
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbx3eL5ysZFDSPQdybdPz-kvmyhT_sclmkCQoVHsTy8R3GcCJNvnKFqmsS3z4hArxVtNsA/exec"
   const [loading, setLoading] = useState(false);
   const [isFormVisible, setIsFormVisible] = useState(true);
   const [isSubmitChange, setIsSubmitChange] = useState(true);
@@ -72,6 +72,10 @@ function Rsvp() {
           <p className="rsvp__string">
             <label htmlFor="person" className="rsvp__label">Количество персон</label>
             <input type="number" min="0" max="10" name="Количество персон" id="person" required className="rsvp__input"></input>
+          </p>
+          <p className="rsvp__string">
+            <label htmlFor="+1" className="rsvp__label">Имена гостей</label>
+            <input type="text" name="Имена гостей" id="+1" required className="rsvp__input"></input>
           </p>
           <div className="rsvp__buttons">
           <button className="rsvp__button" name="Принято" onClick={renderSubmitYes} disabled={loading ? true : false}>{loading ? "Отправка..." : "Подтвердить"}</button>

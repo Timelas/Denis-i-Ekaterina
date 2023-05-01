@@ -13,12 +13,12 @@
 
 .timetable__block {
   display: grid;
-  grid-template-columns: repeat(7, 150px);
+  grid-template-columns: repeat(6, 150px);
   grid-template-rows: repeat(3, max-content);
   grid-template-areas:
-    "rings text-foto glasses text-plate cake text-music car"
-    "line-rings line-foto line-glasses line-plate line-cake line-music line-car"
-    "text-rings foto text-glasses plate text-cake music text-car";
+    "foto text-foto plate text-cake music text-car"
+    "line-rings line-foto line-plate line-cake line-music line-car"
+    "text-rings rings text-plate cake text-music car";
   margin-top: 130px;
   align-items: center;
   justify-items: center;
@@ -207,12 +207,11 @@
   }
 
   .timetable__block {
-    grid-template-rows: repeat(7, 99px);
+    grid-template-rows: repeat(6, 99px);
     grid-template-columns: 1fr 30px 1fr;
     grid-template-areas:
       "rings line-rings text-rings"
       "text-foto line-foto foto"
-      "glasses line-glasses text-glasses"
       "text-plate line-plate plate"
       "cake line-cake text-cake"
       "text-music line-music music"
