@@ -1,6 +1,12 @@
 @import url(../src/vendor/normalize.css);
 @import url(../src/vendor/font/font.css);
 
+:root {
+  color-scheme: light;
+  --color: black;
+  --background-color: fff;
+}
+
 body {
   margin: 0 auto;
   font-family: "gabriola", "Arial", sans-serif;
